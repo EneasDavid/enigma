@@ -81,7 +81,10 @@ h6{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:rgb(126, 126, 126);
 }
-
+.alerta::before{
+    content:"� ";
+    font-size: x-large;
+}
 .buttons{
     display:flex;
     justify-content: space-evenly;
