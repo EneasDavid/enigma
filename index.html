@@ -6,22 +6,31 @@
 	<head>
 		<link rel="stylesheet" href="style/style.css">
 		<nav>
-			Enigma é capaz de criptografar textos e descriptografá-los!
+			
 		</nav>
 	</head>
 	<body>
 		<main>
 			<div class="totalArea">
 				<div class="enterBox">
-					<textarea id="entrada" class="entrada"  pattern="\[0-9]\{3}"placeholder="Digite seu texto"></textarea>
-					<h6 class="alerta">Apenas letras minúsculas e sem acento.</h6>
+					<textarea id="entrada" class="entrada"  placeholder="Digite seu texto"></textarea>
+					<div style="display:flex;">
+						<img src="style/alert.svg" alt="ALERTA">
+						<h6 class="alerta"> Apenas letras minúsculas e sem acento.</h6>
+					</div>
 					<div class="buttons">
 						<button id="cpt" class="btCript">Criptografar</button>
 						<button id="dcpt" class="btDescript">Descriptografar</button>
 					</div>
 				</div>
 				<div class="resultBox">
-					<textarea id="text" style="height:450px;width:100%;color: #495057 !important;cursor: auto;" readonly></textarea>
+					<textarea id="text" class="resultArea" placeholder="
+					
+					
+					
+					
+					
+					Nunhum texto encontrado" readonly></textarea>
 					<button class="buttons btCopy" id="copy">Copiar</button>
 				</div>
 			</div>
