@@ -1,0 +1,120 @@
+html, body{
+    height:100%;
+}
+body{
+    background: #f3f5fc;
+    display:flex;
+    flex-direction: column;
+    margin: 0px;
+}
+nav{
+    font-family:  "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 600;
+    height: 4rem;
+    margin: auto;
+    display:grid;
+    align-items: center;
+    font-size: xx-large;
+}
+main{
+    width: auto !important;
+    margin-right: 2.2rem;
+    margin-left: 3rem;
+    flex: 1 0 auto;
+}
+a{
+    text-decoration:none;
+}
+.totalArea{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.resultBox{
+    background-color:white;
+    border-radius: 20px;
+    width: 27.8vw;
+}
+.enterBox{
+    width: 62.5vw;
+    margin-right:3rem;
+    margin-top: 2rem;
+}
+
+.entrada{
+	height:400px;
+	width:100%;
+	background: #f3f5fc;
+}
+textarea:readonly{
+    background-color: white;
+}
+textarea::placeholder{
+    color:#0a3871;
+    font-weight: 500;
+}
+textarea {
+    /*Tirar os "rsiquinhos" do textarea*/
+    resize: none;
+    border-radius: 20px;
+    border:none;
+    padding: 15px;
+    font-size:larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+textarea:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+h6{
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(126, 126, 126);
+}
+
+.buttons{
+    display:flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+button{
+    margin-top:1%;
+    padding:10px;
+    border-radius: 20px
+}
+.btCript{
+background-color: #0a3871;
+    color: white;
+    border: none;
+    padding: 1.1rem;
+    width: 10rem;
+}
+
+.btDescript{
+background-color: #d8dfe8;
+color: #0a3871;
+    border: 2px solid #0a3871;
+    padding: 1.1rem;
+    width: 10rem;
+
+}
+.btCopy{
+background-color: white;
+color: #0a3871;
+    border: 2px solid #0a3871;
+    padding: 1.1rem;
+    width: 10rem;
+
+}
+
+footer{
+    font-family: sans-serif;
+    font-weight: 500;
+    color:#afafaf;
+    font-size:small;
+    margin: auto;
+/*    margin-top:.8rem;*/
+    flex-shrink: 0;
+}
