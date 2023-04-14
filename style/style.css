@@ -7,6 +7,7 @@ body{
     flex-direction: column;
     margin: 0px;
 }
+
 nav{
     font-family:  "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-weight: 600;
@@ -22,8 +23,15 @@ main{
     margin-left: 3rem;
     flex: 1 0 auto;
 }
-a{
-    text-decoration:none;
+a:link{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    color:#afafaf;
+    font-size:small;
+}
+a:visited {
+    color:#afafaf;
 }
 .totalArea{
     width: 100%;
