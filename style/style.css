@@ -1,5 +1,5 @@
 html, body{
-  height:auto;
+  height:100%;
 }
 
 body{
@@ -21,6 +21,7 @@ nav{
 
 main{
   width: auto !important;
+  height:auto;
   margin-right: 2.2rem;
   margin-left: 3rem;
   flex: 1 0 auto;
