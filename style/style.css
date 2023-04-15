@@ -229,5 +229,5 @@ footer{
     font-size:small;
     margin: auto;
 /*    margin-top:.8rem;*/
-    flex-shrink: 0;
+    flex-shrink: 0 !important;
 }
