@@ -1,7 +1,6 @@
 let buttonC = document.getElementById('cpt');
 let buttonD = document.getElementById('dcpt');
 let divpalceHolder =document.querySelector('.resultBox');
-let funcaoUso = false;
 
 function mudaTela(){
 	divpalceHolder.innerHTML = "<div class='placeholder'><button id='copy' style='display:none'></button><h2>Nenhuma mensagem encontrada</h2><br><h3>Digite um texto que você deseja criptografar ou descriptografar.</h3></div>";
@@ -43,7 +42,7 @@ let input = document.querySelector("#entrada");
 					mensagem.push(codificando[letra]);
 				}
 			}
-			divpalceHolder.innerHTML ='<textarea id="text" class="resultArea" readonly></textarea><button class="buttons btCopy" id="copy">Copiar</button>';
+			divpalceHolder.innerHTML ='<div><textarea id="text" class="resultArea" readonly></textarea><button class="buttons btCopy" id="copy">Copiar</button></div>';
 			document.getElementById('text').value=mensagem.join("");
 			document.getElementById('copy').onclick = copiaTexto;
 		}else{
@@ -59,7 +58,7 @@ let input = document.querySelector("#entrada");
 			mensagemDescriptografada=mensagemDescriptografada.replace(/imes/g,"i");
 			mensagemDescriptografada=mensagemDescriptografada.replace(/ober/g,"o");
 			mensagemDescriptografada=mensagemDescriptografada.replace(/ufat/g,"u");
-			divpalceHolder.innerHTML ='<textarea id="text" class="resultArea" readonly></textarea><button class="buttons btCopy" id="copy">Copiar</button>';
+			divpalceHolder.innerHTML ='<div><textarea id="text" class="resultArea" readonly></textarea><button class="buttons btCopy" id="copy">Copiar</button></div>';
 			document.getElementById('text').value=mensagemDescriptografada;
 			document.getElementById('copy').onclick = copiaTexto;
 		}else{
