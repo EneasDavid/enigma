@@ -1,7 +1,6 @@
 let buttonC = document.getElementById('cpt');
 let buttonD = document.getElementById('dcpt');
 let divpalceHolder =document.querySelector('.resultBox');
-let funcaoUso = false;
 
 function mudaTela(){
 	divpalceHolder.innerHTML = "<div class='placeholder'><button id='copy' style='display:none'></button><h2>Nenhuma mensagem encontrada</h2><br><h3>Digite um texto que você deseja criptografar ou descriptografar.</h3></div>";
