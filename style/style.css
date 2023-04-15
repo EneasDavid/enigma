@@ -98,7 +98,7 @@ textarea {
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
-  
+  background-color: #ffffff00;
   color: #0A3871;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -110,34 +110,47 @@ textarea {
     cursor: auto;
 }
 
-.resultArea::placeholder{
+.placeholder{
     background-image: url(textareaImg.svg);
     background-repeat: no-repeat;
     height: 90%;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 textarea:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
 }
 
-h6{
-    margin-left: .7rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h2,h3,h6{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    /* Gray/gray-400 */
-
-    color: #495057;
-
-    opacity: 0.8;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
+    margin-left: .7rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h6{
+  color: #495057;
+  opacity: 0.8;
+}
+h2,h3{
+  text-align: center;
+}
+
+h2{
+  font-weight: 700;
+  color: #343A40;
+  font-size: 24px !important;
+  /* or 24px */
+}
+h3{
+  color: #495057;
 }
 
 .alerta::before{
