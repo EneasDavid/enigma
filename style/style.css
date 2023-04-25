@@ -1,8 +1,11 @@
-html, body{
+/*html, body{
+  height: -webkit-fill-available;
+}*/
+html{
   height: -webkit-fill-available;
 }
-
 body{
+  height: inherit;
   background: #f3f5fc;
   display:flex;
   flex-direction: column;
@@ -227,6 +230,6 @@ footer{
     font-weight: 500;
     color:#afafaf;
     font-size:small;
-   margin-top:.8rem;
+   margin-top:.8rem !important;
     flex-shrink: 0 !important;
 }
