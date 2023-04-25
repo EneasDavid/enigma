@@ -1,5 +1,5 @@
 html, body{
-  height:100%;
+  height: -webkit-fill-available;
 }
 
 body{
@@ -227,7 +227,6 @@ footer{
     font-weight: 500;
     color:#afafaf;
     font-size:small;
-    margin: auto;
-/*    margin-top:.8rem;*/
+   margin-top:.8rem;
     flex-shrink: 0 !important;
 }
